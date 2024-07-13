@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Motta</title>
+    <style>
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: #0000FF;
+        }
+
+        .button2 {
+            background-color: #008CBA;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .horizontal-view {
+            display: flex;
+            align-items: center;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 20px;
+        }
+
+        .horizontal-view img {
+            margin-right: 20px;
+        }
+
+        .horizontal-view a {
+            margin-right: 30px;
+            color: #000;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .content-text {
+            margin-left: 40px;
+            margin-right: 20px;
+        }
+
+        .content-text h1 {
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 80px;
+        }
+
+        .title {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 48px;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 20px;
+            display: block;
+        }
+
+        .content-text p {
+            margin: 0;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* Defines 4 columns of equal width */
+            grid-gap: 10px;
+            /* Optional: Adds spacing between cards */
+        }
+
+        .feature-cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .feature-image {
+            justify-content: center;
+        }
+
+        .marketplace-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .item-container {
+            display: flex;
+            align-items: center;
+            /* Align content vertically */
+            margin-bottom: 1rem;
+            /* Add space between list items */
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .feature-cards1 {
+            gap: 20px;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .card img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .homepage-versions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .homepage-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+
+
+        .homepage-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .homepage-card h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .menu-list li:before {
+            content: "\25CF";
+            /* Unicode character for a circle */
+            font-size: 1.2rem;
+            /* Adjust point size */
+            color: #0000FF;
+            /* Set point color */
+            position: absolute;
+            left: -1.2rem;
+            /* Position the point horizontally */
+            top: 0.2rem;
+            /* Position the point vertically */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Optional for vertical centering */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .footer-section h3 {
+            margin-top: 0;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="horizontal-view">
+        <img src="https://uix.store/intro/motta/images/logo.svg" alt="Motta Logo">
+        <a href="#">Demos</a>
+        <a href="#">Mobile-First</a>
+        <a href="#">Features</a>
+        <a href="#">Documentation</a>
+    </div>
+
+    <div class="content-container">
+        <div class="content-text">
+            <h1>Create<br> Your Dream<br> Online Store</h1>
+            <p>Motta a Multivendor & Marketplace<br> Wordpress Theme</p>
+            <a href="#">Get Started</a>
+            <a href="#">Explore Features</a>
+        </div>
+        <img src="https://uix.store/intro/motta/images/head/head.jpg" alt="Store Image"
+            style="width:600px;height:400px;">
+    </div>
+
+    <h3 class="title">Powerful and flexible tools make it
+        easier to manage your site.</h3>
+
+    <div class="feature-cards">
+        <div class="card">
+            <img src="https://www.svgrepo.com/show/490863/mobile-charge.svg" alt="Mobile-First Design">
+            <h3>Mobile-First Design</h3>
+            <p>Motta is 100% fluid & responsive across all device types.</p>
+        </div>
+        <div class="card">
+            <img src="https://www.svgrepo.com/show/491072/shop.svg" alt="Multipurpose eCommerce">
+            <h3>Multipurpose eCommerce</h3>
+            <p>Modern and stunning design for different purposes.</p>
+        </div>
+        <div class="card">
+            <img src="https://www.svgrepo.com/show/522269/settings.svg" alt="Powerful Theme Options">
+            <h3>Powerful Theme Options</h3>
+            <p>Various settings and options to customize online store.</p>
+        </div>
+        <div class="card">
+            <img src="https://www.svgrepo.com/show/391878/hand-right.svg" alt="Easy Website Building">
+            <h3>Easy Website Building</h3>
+            <p>You can easily launch your own website with Motta.</p>
+        </div>
+    </div>
+    <h3 class="title">Stunning Homepages</h3>
+    <p class="subtitle">Easily import the whole Motta demo content and choose from a<br>
+        selection of 10 amazing pre-designed home pages.</p>
+    <div class="homepage-versions">
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/demos/1.jpg" alt="Home v1 - Marketplace">
+            <h3>Home v1 - Marketplace</h3>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/demos/2.jpg" alt="Home v2 - Retail">
+            <h3>Home v2 - Retail</h3>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/demos/3.jpg" alt="Home v3 - Mega Market">
+            <h3>Home v3 - Mega Market</h3>
+        </div>
+        <br>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/demos/4.jpg" alt="Home v3 - Mega Market">
+            <h3>Home v4 - Multi Vendor</h3>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/demos/5.jpg" alt="Home v3 - Mega Market">
+            <h3>Home v5 - Supper Market</h3>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/demos/6.jpg" alt="Home v3 - Mega Market">
+            <h3>Home v6 - Electronics</h3>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/demos/7.jpg" alt="Home v3 - Mega Market">
+            <h3>Home v7 - Electronics</h3>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/demos/8.jpg" alt="Home v3 - Mega Market">
+            <h3>Home v8 - Electronics</h3>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/demos/9.jpg" alt="Home v3 - Mega Market">
+            <h3>Home v9 - Electronics</h3>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/demos/10.jpg" alt="Home v3 - Mega Market">
+            <h3>Home v10 - Electronics</h3>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/demos/1.jpg" alt="Home v3 - Mega Market">
+            <h3>Home RTL</h3>
+        </div>
+        <div class="homepage-card">
+            <h3>Coming Soon!</h3>
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="content-text">
+            <h1>Mobile-First<br>
+                Design</h1>
+            <p>Quick and easy to use is the most<br>
+                important thing for selling products<br>
+                on mobile. Motta is fully responsive<br>
+                and very close to a native app.</p>
+
+            <ul class="menu-list">
+                <li>
+                    <p>App style menu and navigation
+
+                    </p>
+                </li>
+                <li>
+                    <p>Small header and logo area to save space on
+                        mobile screen</a>
+                </li>
+                <li>
+                    <p>Fixed bar with the most necessary things</p>
+                </li>
+            </ul>
+            <img src="https://uix.store/intro/motta/images/mobile-first/motta-mobile-QR.svg" alt="Store Image"
+                style="width:100px;height:100px;">
+        </div>
+
+        <img src="https://uix.store/intro/motta/images/mobile-first/mobile.png" alt="Store Image"
+            style="width:600px;height:600px;">
+    </div>
+    <h3 class="title">E-Commerce Made Easy</h3>
+    <p class="subtitle">Everything you need to power your online store.</p>
+
+    <div class="homepage-versions">
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/quickview.jpg" alt="Home v1 - Marketplace">
+            <h3>Quickview</h3>
+            <h4>
+                Take a peek at the product info<br>
+                without leaving the shop catalogue.</h4>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/wishlist.jpg" alt="Home v2 - Retail">
+            <h3>Wishlist
+            </h3>
+            <h4>
+                Allow your customers to create<br>
+                the personal wishlist.</h4>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/compare.jpg" alt="Home v2 - Retail">
+            <h3>Compare
+            </h3>
+            <h4>
+                Which product do you want?<br>
+                Please open your eyes and choose
+                you favorite one.</h4>
+        </div>
+
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/variation-swatches.jpg" alt="Home v2 - Retail">
+            <h3>Product Variation
+                Swatches
+            </h3>
+            <h4>
+                Turn the product variation<br>
+                select options fields into radio<br>
+                images,colors, and label.</h4>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/vendor.jpg" alt="Home v2 - Retail">
+            <h3>Vendor
+                Information
+            </h3>
+            <h4>
+                Check the authenticity of vendors<br>
+                via their social profiles, phone<br>
+                and more.</h4>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/Frequently-Bought-Together.jpg"
+                alt="Home v2 - Retail">
+            <h3>Frequently
+                Bought Together
+            </h3>
+            <h4>
+                Recommended additional products<br>
+                to increases the average order value.</h4>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/360.jpg" alt="Home v2 - Retail">
+            <h3>360 Degree
+            </h3>
+            <h4>
+                Show your product in details to easily<br>
+                visualize it from all angles.</h4>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/variation-gallery.jpg" alt="Home v2 - Retail">
+            <h3>Product Variation
+                Gallery
+            </h3>
+            <h4>
+                Allow customers to be able to swap<br>
+                different gallery images when<br>
+                they select a product variation.</h4>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/daily-deals.jpg" alt="Home v2 - Retail">
+            <h3>Daily Deals
+            </h3>
+            <h4>
+                Run discounts in short time is one<br>
+                of the best ways to attract more<br>
+                customers to your site.</h4>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/countdown-timer.jpg" alt="Home v2 - Retail">
+            <h3>Countdown
+                Timer
+            </h3>
+            <h4>
+                Put a countdown in the product pages<br>
+                of your shop and use it to highlight<br>
+                certain offers or deals.</h4>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/reviews.jpg" alt="Home v2 - Retail">
+            <h3>Reviews
+            </h3>
+            <h4>
+                Put reviews wherever you like in the<br>
+                size<br>
+                you need.</h4>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/coupon.jpg" alt="Home v2 - Retail">
+            <h3>Coupon
+            </h3>
+            <h4>
+                Set up irresistible deals and offers<br>
+                with flexible discount promo codes.</h4>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/stock.jpg" alt="Home v2 - Retail">
+            <h3>Product Stock
+            </h3>
+            <h4>
+                Great information about the<br>
+                stock availability.</h4>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/popup.jpg" alt="Home v2 - Retail">
+            <h3>Added to Cart
+                Popup
+            </h3>
+            <h4>Display a success popup upon addition<br>
+                of an item to the cart and<br>
+                recommended products to increase<br>
+                the average order value.</h4>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/shipment.jpg" alt="Home v2 - Retail">
+            <h3>Shipment and
+                Delivery
+            </h3>
+            <h4>
+                Share tracking of deliveries,<br>
+                notify when shipping status changes.</h4>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/ajax.jpg" alt="Home v2 - Retail">
+            <h3>AJAX Load More
+                Products
+            </h3>
+            <h4>
+                Help customers to view products<br>
+                of next page without reloading a<br>
+                page</h4>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/recently.jpg" alt="Home v2 - Retail">
+            <h3>Recently Viewed
+                Products
+            </h3>
+            <h4>
+                Help customers to see the list of<br>
+                products they recently viewed.</h4>
+        </div>
+        <div class="homepage-card">
+            <img src="https://uix.store/intro/motta/images/features/sticky.jpg" alt="Home v2 - Retail">
+            <h3>Sticky
+                Add To Cart
+            </h3>
+            <h4>
+                Let customers buy the product with a<br>
+                Sticky Cart while scrolling, down. It<br> boosts your sales, and conversions.</h4>
+        </div>
+    </div>
+    <h3 class="title">And more features available...</h3>
+    <div class="content-container">
+        <div class="content-text">
+            <h1>Easily Build Multi-<br>Vendor<br>
+                Marketplace</h1>
+            <p>Create your own marketplace and allow vendors to<br>
+                sell just like Amazon, Envato, eBay with Dokan<br>
+                Multivendor Marketplace or WCFM Marketplace<br>
+                plugin.</p>
+
+            <ul class="marketplace-list">
+                <li>
+                    <div class="item-container">
+                        <img src="https://uix.store/intro/motta/images/multi-vendor/Dokan.jpg" alt="Dokan Marketplace">
+                        <p>Help you to build your own marketplace similar to Amazon, Shopify, Magento like marketplaces.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-container">
+                        <img src="https://uix.store/intro/motta/images/multi-vendor/WCFM.jpg" alt="WCFM Marketplace">
+                        <p>Description of WCFM marketplace (add your text here).</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <img src="https://uix.store/intro/motta/images/multi-vendor/vendor-graph.jpg" alt="Store Image"
+            style="width:650px;height:600px;">
+    </div>
+    <h3 class="title">And<br>
+        More Reasons to Choose Motta</h3>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://www.svgrepo.com/show/455957/drag-right.svg" alt="Mobile-First Design">
+            <h3>Drag&Drop Editor
+            </h3>
+            <p>Create pages easily with your<br> favourite builder.</p>
+        </div>
+        <div class="card">
+            <img src="https://www.svgrepo.com/show/478294/search-window.svg" alt="Mobile-First Design">
+            <h3>100% Seo Friendly
+            </h3>
+            <p>Take charge & control your content <br>that matters most.</p>
+        </div>
+        <div class="card">
+            <img src="https://www.svgrepo.com/show/344979/lightning-charge.svg" alt="Mobile-First Design">
+            <h3>Speed Optimization
+
+            </h3>
+            <p>We continually evolve Motta to meet<br> the latest standards..</p>
+        </div>
+        <div class="card">
+            <img src="https://www.svgrepo.com/show/384059/paint-bucket-color-colour.svg" alt="Mobile-First Design">
+            <h3>Unlimited Colors
+
+            </h3>
+            <p>Set your colors or use one of the pre-<br>defined color skins.</p>
+        </div>
+        <div class="card">
+            <img src="https://www.svgrepo.com/show/384059/paint-bucket-color-colour.svg" alt="Mobile-First Design">
+            <h3>Powerful Theme Options
+
+            </h3>
+            <p>Easy to configure everything,<br> absolutely no coding required.</p>
+        </div>
+        <div class="card">
+            <img src="https://www.svgrepo.com/show/345031/patch-check.svg" alt="Mobile-First Design">
+            <h3>One-Click Installation
+
+            </h3>
+            <p>Get your website up and running in<br> just a few clicks.</p>
+        </div>
+        <div class="card">
+            <img src="https://www.svgrepo.com/show/345031/patch-check.svg" alt="Mobile-First Design">
+            <h3>Responsive&Retina Ready
+
+            </h3>
+            <p>Motta is fully responsive and ready<br> for retina displays.</p>
+        </div>
+        <div class="card">
+            <img src="https://www.svgrepo.com/show/345031/patch-check.svg" alt="Mobile-First Design">
+            <h3>Free Lifetime Updates
+            </h3>
+            <p>Updates are and will always be free<br> for all our customers.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
