@@ -12,7 +12,9 @@ body {
     background: #fff
 }
 
-a,a:hover,a:visited {
+a,
+a:hover,
+a:visited {
     color: inherit;
     text-decoration: none
 }
@@ -25,7 +27,10 @@ a {
     outline: 0
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
     font-weight: 700;
     line-height: 1.3333;
     margin: 0
@@ -65,12 +70,12 @@ img {
     margin-right: auto
 }
 
-.motta-container {
+.spin-container {
     max-width: 1300px;
     padding-left: 80px;
     padding-right: 80px;
-    --motta-bg-color-container: #fbf5f3;
-    background-color: var(--motta-bg-color-container)
+    --spin-bg-color-container: #fbf5f3;
+    background-color: var(--spin-bg-color-container)
 }
 
 .columns {
@@ -108,8 +113,8 @@ img {
 }
 
 .columns-6 .column {
-    flex: 1 0 calc( 100%/6);
-    max-width: calc( 100%/6)
+    flex: 1 0 calc(100%/6);
+    max-width: calc(100%/6)
 }
 
 .columns--guter-120 {
@@ -188,15 +193,15 @@ img {
 
 .screen-reader-text {
     border: 0;
-    clip: rect(1px,1px,1px,1px);
+    clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
     height: 1px;
     margin: -1px;
     overflow: hidden;
     padding: 0;
-    position: absolute!important;
+    position: absolute !important;
     width: 1px;
-    word-wrap: normal!important
+    word-wrap: normal !important
 }
 
 .button {
@@ -267,7 +272,8 @@ img {
     transition: .4s
 }
 
-.animate-line.active:after,.animate-line:hover:after {
+.animate-line.active:after,
+.animate-line:hover:after {
     width: 100%;
     left: 0
 }
@@ -299,7 +305,7 @@ img {
 @keyframes konteFadeInUp {
     from {
         opacity: 0;
-        transform: translate3d(0,100px,0)
+        transform: translate3d(0, 100px, 0)
     }
 
     to {
@@ -320,7 +326,7 @@ img {
 
     to {
         opacity: 0;
-        transform: translate3d(0,-100px,0)
+        transform: translate3d(0, -100px, 0)
     }
 }
 
@@ -361,8 +367,7 @@ img {
 }
 
 @keyframes konteSlideOut {
-    0% {
-    }
+    0% {}
 
     100% {
         width: 0
@@ -405,12 +410,12 @@ img {
     position: absolute;
     top: -20px;
     right: -5px;
-    transform: translate(100%,0)
+    transform: translate(100%, 0)
 }
 
 .site-header.sticky {
-    background: rgba(255,255,255,.9);
-    box-shadow: 0 0 8px 0 rgba(0,0,0,.2);
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
     height: 80px
 }
 
@@ -431,7 +436,8 @@ img {
     position: relative
 }
 
-.site-header .toggle-mobile-menu .hamburger:before,.site-header .toggle-mobile-menu .hamburger:after {
+.site-header .toggle-mobile-menu .hamburger:before,
+.site-header .toggle-mobile-menu .hamburger:after {
     content: "";
     display: block;
     border-bottom: 2px solid
@@ -492,7 +498,7 @@ img {
 
 @media(min-width: 768px) {
     .nav-menu {
-        display:flex!important
+        display: flex !important
     }
 }
 
@@ -629,7 +635,7 @@ img {
 .demos-preview img {
     display: block;
     margin: 0 auto 28px;
-    box-shadow: 6px 10px 21px 0 rgba(0,0,0,.17)
+    box-shadow: 6px 10px 21px 0 rgba(0, 0, 0, .17)
 }
 
 .demos-preview h4 {
@@ -652,7 +658,8 @@ img {
     transition: .4s
 }
 
-.demos-preview h4 span.active:after,.demos-preview h4 span:hover:after {
+.demos-preview h4 span.active:after,
+.demos-preview h4 span:hover:after {
     width: 100%;
     left: 0
 }
@@ -803,7 +810,8 @@ img {
     background: #fff
 }
 
-.add-to-wishlist-button .added,.add-to-wishlist-button .adding {
+.add-to-wishlist-button .added,
+.add-to-wishlist-button .adding {
     display: none
 }
 
@@ -1010,7 +1018,7 @@ ul.products li.product .ajax_add_to_cart.loading:before {
     border: 2px solid;
     border-top-color: transparent;
     animation: spin infinite 1s linear;
-    transition: width .2s,opacity .2s linear .2s
+    transition: width .2s, opacity .2s linear .2s
 }
 
 ul.products li.product .ajax_add_to_cart.added:before {
@@ -1044,13 +1052,13 @@ ul.products li.product .add-to-wishlist-button .spinner {
 ul.products .product-inner {
     position: relative;
     overflow: hidden;
-    transition: box-shadow .4s,background-color .3s
+    transition: box-shadow .4s, background-color .3s
 }
 
 ul.products .product-inner:hover {
     color: #1d2128;
     background-color: #fff;
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, .1);
     transition: box-shadow .4s
 }
 
@@ -1105,7 +1113,8 @@ ul.products .hover-simple .product-inner:hover {
     box-shadow: none
 }
 
-ul.products .hover-simple .product-inner:hover .product-thumbnail,ul.products .hover-simple .product-inner:hover .product-summary {
+ul.products .hover-simple .product-inner:hover .product-thumbnail,
+ul.products .hover-simple .product-inner:hover .product-summary {
     transform: none
 }
 
@@ -1279,18 +1288,20 @@ ul.products.columns-5 li.product {
 .demo-pages img {
     display: block;
     margin-bottom: 25px;
-    box-shadow: 0 40px 60px -40px rgba(0,0,0,.2)
+    box-shadow: 0 40px 60px -40px rgba(0, 0, 0, .2)
 }
 
 .demo-pages .column {
     margin-bottom: 35px
 }
 
-.section-blog,.section-portfolio {
+.section-blog,
+.section-portfolio {
     padding-bottom: 80px
 }
 
-.section-blog .subtitle,.section-portfolio .subtitle {
+.section-blog .subtitle,
+.section-portfolio .subtitle {
     margin-bottom: 80px
 }
 
@@ -1300,7 +1311,8 @@ ul.products.columns-5 li.product {
     background: #6b62bb
 }
 
-.section-typography .title,.section-typography .subtitle {
+.section-typography .title,
+.section-typography .subtitle {
     text-align: center
 }
 
@@ -1443,7 +1455,7 @@ ul.products.columns-5 li.product {
     padding: 50px 40px;
     height: 100%;
     border-radius: 20px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,.08)
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .08)
 }
 
 .icon-box .motta-icon-svg {
@@ -1642,7 +1654,7 @@ ul.products.columns-5 li.product {
 
 .section-multi-vendor ul .image img {
     border-radius: 10px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,.08)
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .08)
 }
 
 .section-multi-vendor ul .name {
@@ -1670,7 +1682,7 @@ ul.products.columns-5 li.product {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSI5NnB4IiBoZWlnaHQ9Ijk2cHgiIHZpZXdCb3g9IjAgMCA5NiA5NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgOTYgOTY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMUVDNkIxO30KPC9zdHlsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTgzLDE5LjljLTIuNS0xLjMtNS4yLTIuMy04LjItM2MtOC43LTEuOS0xNy45LTEuOC0yOS4yLDAuNGMtMTEuNCwyLjMtMjIuNSw2LjctMzUsMTQKCWMtMi42LDEuNS0yLjQsMy4xLTEuOSw0LjFjMC4zLDAuNiwwLjgsMSwxLjQsMS4xYzAuOCwwLjIsMS44LDAsMy4xLTAuN2MzLjgtMi4yLDguMy00LjcsMTMuMS02LjhjMTItNS40LDIzLjYtOC4xLDM1LjYtOC4zbDAsMAoJYzEuOS0wLjEsMy45LDAuMSw2LDAuM2M1LjMsMC41LDkuNCwxLjYsMTIuOCwzLjVjNi44LDMuNiw4LjcsOS41LDUuNiwxNi41Yy0xLjgsNC00LjYsNy42LTguNywxMS4zQzY5LjMsNjAuMiw1OC45LDY2LjEsNDYsNzAuNgoJYy0xMS4zLDQtMjAuOCw1LjYtMjkuNiw1LjFDMTMuMyw3NS42LDExLDc1LDksNzRjLTIuNC0xLjMtMy4xLTMtMi4zLTUuNmMwLjItMC44LDAuNi0xLjcsMS4xLTIuNWMxLjUtMi42LDMuNS01LDYuMS03LjMKCWMxMC42LTkuNCwyMy4zLTE2LjMsMzcuNi0yMC41YzAuOS0wLjIsMS42LTAuNSwyLjMtMC44YzEuMi0wLjUsMS44LTEuNywxLjUtMi45Yy0wLjMtMS4xLTEuMy0xLjgtMi42LTEuN2MtMC43LDAtMS40LDAuMi0yLjQsMC40CgljLTguMywyLjItMTYuNSw1LjctMjQuOSwxMC43Yy03LjUsNC40LTEzLDguNy0xNy41LDEzLjRjLTIuMSwyLjItNC43LDUuMy02LDkuMmMtMS44LDUuMywwLDkuOSw1LjEsMTIuNGMyLjgsMS40LDYsMi4xLDEwLjEsMi4zCgljMC45LDAsMS43LDAuMSwyLjYsMC4xYzYuOSwwLDE0LjEtMS4yLDIyLjUtMy43YzE0LjctNC40LDI2LjgtMTAuNiwzNi45LTE5YzUuNy00LjcsOS41LTkuNCwxMi0xNC42Qzk1LjYsMzQsOTIuNywyNSw4MywxOS45eiIvPgo8L3N2Zz4K);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1811,7 +1823,7 @@ ul.products.columns-5 li.product {
 }
 
 .motta-accordion {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,.08);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .08);
     border-radius: 30px;
     padding: 48px 80px 52px
 }
@@ -1850,7 +1862,8 @@ ul.products.columns-5 li.product {
     transition: .4s
 }
 
-.motta-accordion__icon--default:before,.motta-accordion__icon--default:after {
+.motta-accordion__icon--default:before,
+.motta-accordion__icon--default:after {
     content: "";
     display: block;
     position: absolute;
@@ -1858,7 +1871,7 @@ ul.products.columns-5 li.product {
 }
 
 .motta-accordion__icon--default:before {
-    transform: translate(150%,-50%);
+    transform: translate(150%, -50%);
     left: 0;
     top: 50%;
     border-width: 2px 0 0;
@@ -1866,7 +1879,7 @@ ul.products.columns-5 li.product {
 }
 
 .motta-accordion__icon--default:after {
-    transform: translate(-50%,150%);
+    transform: translate(-50%, 150%);
     left: 50%;
     top: 0;
     border-width: 0 0 0 2px;
@@ -1974,7 +1987,7 @@ ul.products.columns-5 li.product {
 .site-footer {
     color: #fff;
     padding: 160px 0 0;
-    background-color: #1d2128
+    background-color: #e64d42
 }
 
 .footer-content {
@@ -1996,9 +2009,6 @@ ul.products.columns-5 li.product {
     color: #1d2128
 }
 
-.footer-content .button .motta-icon-svg {
-    font-size: 19px
-}
 
 .footer-boxes {
     padding: 45px 145px
@@ -2009,10 +2019,6 @@ ul.products.columns-5 li.product {
     align-items: center
 }
 
-.footer-box .motta-icon-svg {
-    font-size: 32px;
-    margin-right: 24px
-}
 
 .footer-box h4 {
     margin: 0;
@@ -2033,14 +2039,14 @@ ul.products.columns-5 li.product {
 
 @media(max-width: 1440px) {
     .container-fluid {
-        margin-left:auto;
+        margin-left: auto;
         margin-right: auto
     }
 }
 
 @media(max-width: 1199px) {
     .container {
-        max-width:100%
+        max-width: 100%
     }
 
     .site-header {
@@ -2054,8 +2060,12 @@ ul.products.columns-5 li.product {
 }
 
 @media(max-width: 991px) {
-    .columns-3 .column,.columns-4 .column,.columns-5 .column,.columns-6 .column {
-        flex-basis:50%;
+
+    .columns-3 .column,
+    .columns-4 .column,
+    .columns-5 .column,
+    .columns-6 .column {
+        flex-basis: 50%;
         max-width: 50%
     }
 
@@ -2156,7 +2166,8 @@ ul.products.columns-5 li.product {
         margin-top: 15px
     }
 
-    .section-multi-vendor .vendor-content,.section-multi-vendor .vendor-image {
+    .section-multi-vendor .vendor-content,
+    .section-multi-vendor .vendor-image {
         flex: 1 0 100%;
         max-width: 100%
     }
@@ -2192,8 +2203,11 @@ ul.products.columns-5 li.product {
 }
 
 @media(max-width: 767px) {
-    .columns-3 .column,.columns-4 .column,.columns-5 .column {
-        flex-basis:100%;
+
+    .columns-3 .column,
+    .columns-4 .column,
+    .columns-5 .column {
+        flex-basis: 100%;
         max-width: 100%
     }
 
@@ -2232,7 +2246,7 @@ ul.products.columns-5 li.product {
         width: 100%;
         left: 0;
         top: 70px;
-        background: rgba(255,255,255,.9);
+        background: rgba(255, 255, 255, .9);
         padding: 20px
     }
 
@@ -2262,20 +2276,26 @@ ul.products.columns-5 li.product {
         margin: 20px 0 0
     }
 
-    .section-mobile-first .columns-2 .column,.section-multi-vendor .columns-2 .column,.section-support .columns-2 .column {
+    .section-mobile-first .columns-2 .column,
+    .section-multi-vendor .columns-2 .column,
+    .section-support .columns-2 .column {
         flex: 1 0 100%;
         max-width: 100%;
         padding: 0 5px
     }
 
-    .section-mobile-first .motta-container,.section-multi-vendor .motta-container,.section-compatible-plugin .motta-container {
+    .section-mobile-first .motta-container,
+    .section-multi-vendor .motta-container,
+    .section-compatible-plugin .motta-container {
         background-color: transparent;
         border-radius: 0;
         padding-top: 0;
         padding-bottom: 0
     }
 
-    .section-mobile-first .columns,.section-multi-vendor .columns,.section-compatible-plugin .columns {
+    .section-mobile-first .columns,
+    .section-multi-vendor .columns,
+    .section-compatible-plugin .columns {
         background-color: var(--motta-bg-color-container);
         margin: 0;
         padding-top: 30px;
